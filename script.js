@@ -2,7 +2,7 @@
 
 // Assignment 1
 /* Loop over the arrays from 1- 200
-    if the array is divisble by 6 and 8 print Shamstiidelab
+    if the numbers is divisble by 6 and 8 print Shamstiidelab
      if its divisble by 6 print shams
     if it divisble by 8 print tiidelab
     if all the above condivistions doesnt work print rest of the numbers
@@ -23,18 +23,20 @@ for (let i = 1; i <= 200; i++) {
 // Assinment 2
 
 /*using a nexted loop
-check for the odd and even numbers
+check for the odd and even rows
 
 */
 
 
 const gridSize = function (size) {
   let s = "";
+  // iteration of the rows
   for (let row = 0; row < size; row++) {
     let odd = row % 2 == 0;
     if (odd) {
       s += " ";
     }
+    // iteration of the column
     for (let column = 0; column < size; column++) {
       s += "#";
     }
@@ -44,3 +46,5 @@ const gridSize = function (size) {
   return s;
 };
 console.log(gridSize(8));
+
+console.log(gridSize(24));
